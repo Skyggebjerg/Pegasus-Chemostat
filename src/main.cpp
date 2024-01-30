@@ -44,6 +44,9 @@ void loop()
 {
    if(M5.Btn.wasPressed()) {
     //for (int i = 1; i <= 30; i++) {
+      while (1)
+
+      {      
       ss.powerEnable(true);
       ss.setSpeed(600); // 60 = 60 revolutions per minute (rpm) = 1 rev per sec (There are 6.5 revs per 100 µl)
       ss.step(-1300,100,100); //aspirate (1300 steps = 6.5 revs = 100 µl)
@@ -55,14 +58,20 @@ void loop()
 }     //ss.setSpeed(300);
       //ss.setSpeed(5); // 5 revs/min = 300 revs/h = 46.15 full syringe strokes (300/6.5) = 4615 µl per hour (46 x 100µl) 
       //ss.setSpeed(1); // 1 revs/min = 60 revs/h = 9.23 full syringe strokes (60/6.5) = 923 µl per hour (9.23 x 100µl)
-      //ss.setSpeed(14); // 14 revs/min = 12.922 µl/h (14 x 923 µl)
-      ss.setSpeed(3); // 3 revs/min = 2.77 ml/h (3 x 923 µl)   
+      ss.setSpeed(15); // 14 revs/min = 12.922 µl/h (14 x 923 µl)
+      //ss.setSpeed(3); // 3 revs/min = 2.77 ml/h (3 x 923 µl)   
       ss.step(1300); //dispense
       delay(100);
       digitalWrite(26, LOW); // Tell Valve to change back 
       ss.powerEnable(false);
+      M5.update();
+      if(M5.Btn.wasPressed()) {
+        break;
+      }
+      delay(1000);
    //  delay(500); // include in for loop
    //} // for loop end
    }
+         }
          M5.update();
 }
