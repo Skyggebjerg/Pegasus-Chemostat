@@ -106,4 +106,5 @@
  C:/Users/ole/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-cpu.h \
  C:/Users/ole/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp8266-compat.h \
  C:/Users/ole/.platformio/packages/framework-arduinoespressif32/cores/esp32/stdlib_noniso.h \
- C:/Users/ole/.platformio/packages/framework-arduinoespressif32/cores/esp32/binary.h
+ C:/Users/ole/.platformio/packages/framework-arduinoespressif32/cores/esp32/binary.h \
+ C:/Users/ole/.platformio/packages/framework-arduinoespressif32/cores/esp32/io_pin_remap.h

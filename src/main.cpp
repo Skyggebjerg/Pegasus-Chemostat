@@ -50,9 +50,9 @@ void loop()
       startTime = millis();     
       ss.powerEnable(true);
       ss.setSpeed(600); // 60 = 60 revolutions per minute (rpm) = 1 rev per sec (There are 6.5 revs per 100 µl)
-      Serial.println("AspirateStart:-650");
-      ss.step(-650,100,100); //aspirate (1300 steps = 6.5 revs = 100 µl)
-      Serial.println("AspirateEnd:-650");
+      Serial.println("AspirateStart:-750");
+      ss.step(-750,100,100); //aspirate (1300 steps = 6.5 revs = 100 µl)
+      Serial.println("AspirateEnd:-750");
       delay(100);
       digitalWrite(26, HIGH); // Tell Valve to change
       
@@ -61,11 +61,12 @@ void loop()
 }     //ss.setSpeed(300);
       //ss.setSpeed(5); // 5 revs/min = 300 revs/h = 46.15 full syringe strokes (300/6.5) = 4615 µl per hour (46 x 100µl) 
       //ss.setSpeed(1); // 1 revs/min = 60 revs/h = 9.23 full syringe strokes (60/6.5) = 923 µl per hour (9.23 x 100µl)
-      ss.setSpeed(15); // 14 revs/min = 12.922 µl/h (14 x 923 µl)
+      //ss.setSpeed(16); // 16 = fast
+      ss.setSpeed(8); // 8 = slow
       //ss.setSpeed(3); // 3 revs/min = 2.77 ml/h (3 x 923 µl)   
-      Serial.println("DispenseStart:650");
-      ss.step(650); //dispense
-      Serial.println("DispenseEnd:650");
+      Serial.println("DispenseStart:750");
+      ss.step(750); //dispense
+      Serial.println("DispenseEnd:750");
       delay(100);
       digitalWrite(26, LOW); // Tell Valve to change back 
       ss.powerEnable(false);

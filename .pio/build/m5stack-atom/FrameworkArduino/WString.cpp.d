@@ -123,10 +123,12 @@
  C:/Users/ole/.platformio/packages/framework-arduinoespressif32/cores/esp32/HardwareSerial.h \
  C:/Users/ole/.platformio/packages/framework-arduinoespressif32/cores/esp32/HWCDC.h \
  C:/Users/ole/.platformio/packages/framework-arduinoespressif32/cores/esp32/Esp.h \
+ C:/Users/ole/.platformio/packages/framework-arduinoespressif32/cores/esp32/Arduino.h \
  C:/Users/ole/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/spi_flash/include/esp_partition.h \
  C:/Users/ole/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/spi_flash/include/esp_flash.h \
  C:/Users/ole/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/hal/include/hal/spi_flash_types.h \
  C:/Users/ole/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/hal/include/hal/esp_flash_err.h \
  C:/Users/ole/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/spi_flash/include/esp_spi_flash.h \
  C:/Users/ole/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/spi_flash/include/esp_spi_flash_counters.h \
- C:/Users/ole/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_hw_support/include/soc/esp32/spiram.h
+ C:/Users/ole/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/esp_hw_support/include/soc/esp32/spiram.h \
+ C:/Users/ole/.platformio/packages/framework-arduinoespressif32/cores/esp32/io_pin_remap.h
