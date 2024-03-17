@@ -61,8 +61,11 @@ void loop()
 }     //ss.setSpeed(300);
       //ss.setSpeed(5); // 5 revs/min = 300 revs/h = 46.15 full syringe strokes (300/6.5) = 4615 µl per hour (46 x 100µl) 
       //ss.setSpeed(1); // 1 revs/min = 60 revs/h = 9.23 full syringe strokes (60/6.5) = 923 µl per hour (9.23 x 100µl)
-      //ss.setSpeed(16); // 16 = fast
-      ss.setSpeed(8); // 8 = slow
+      
+      ss.setSpeed(300); // 300 = superfast = purge and ethanol cleaning
+      //ss.setSpeed(16); // 16 = fast = 12.7 ml/h
+      //ss.setSpeed(8); // 8 = slow = 6,4 ml/h
+      
       //ss.setSpeed(3); // 3 revs/min = 2.77 ml/h (3 x 923 µl)   
       Serial.println("DispenseStart:750");
       ss.step(750); //dispense
