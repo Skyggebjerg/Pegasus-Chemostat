@@ -1,18 +1,11 @@
+// Stepmotor control for syringe pump in Pegasus
+
 #include <Arduino.h>
 
 #include <Arduino.h>
 #include <M5Atom.h>
 #include "StepperDriver.h"
 #include "FastLED.h"
-
-//#define Neopixel_PIN 26
-//#define NUM_LEDS     37
-
-//CRGB leds[NUM_LEDS];
-//uint8_t gHue = 0;  // Initial tone value.
-//uint8_t brightn = 0;  // Initial brightness value. 
-
-//int cur_value1 = 0, cur_value2 = 0;
 
 int motor_steps = 200;
 int step_divisition = 32; //32
@@ -62,8 +55,8 @@ void loop()
       //ss.setSpeed(5); // 5 revs/min = 300 revs/h = 46.15 full syringe strokes (300/6.5) = 4615 µl per hour (46 x 100µl) 
       //ss.setSpeed(1); // 1 revs/min = 60 revs/h = 9.23 full syringe strokes (60/6.5) = 923 µl per hour (9.23 x 100µl)
       
-      ss.setSpeed(300); // 300 = superfast = purge and ethanol cleaning
-      //ss.setSpeed(16); // 16 = fast = 12.7 ml/h
+      //ss.setSpeed(300); // 300 = superfast = purge and ethanol cleaning
+      ss.setSpeed(16); // 16 = fast = 12.7 ml/h
       //ss.setSpeed(8); // 8 = slow = 6,4 ml/h
       
       //ss.setSpeed(3); // 3 revs/min = 2.77 ml/h (3 x 923 µl)   
